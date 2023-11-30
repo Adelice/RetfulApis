@@ -39,5 +39,5 @@ api.add_resource(HelloWorld,"/")
 api.add_resource(RegisterStudentClassView,"/addstudent")  
 
 
-if __name__=="main":
+if __name__=="__main__":
     app.run(debug=True)
