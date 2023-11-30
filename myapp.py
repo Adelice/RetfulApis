@@ -10,7 +10,7 @@ ma=Marshmallow()
 
 #class to validates data
 class RegisterStudent(ma.Schema):
-    studentname=fields.String(required=True, validate=validate.Length(min=5, max=10,error="invalid name length"))
+    studentname=fields.String(required=True, validate=validate.Length(min=5, max=10,error="invalid name length"))#validation with parameters
     studentemail=fields.Email(required=True)
     studentclass=fields.String(required=True)
 
